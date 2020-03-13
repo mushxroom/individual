@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+        
+        var dotLeft = ($(".container").width()-$(".dot").width())/2;
+        //
+        var dotTop = ($(".container").height()-$(".dot").height())/2;
+        //
+        var stard = 0;
+        //
+        var radius = 288;
+        //每一个BOX对应的角度;
+        var avd = 360/$(".box").length+stard;
+        //每一个BOX对应的弧度;
+        var ahd = avd*Math.PI/180;    
+        //设置圆的中心点的位置
+        $(".dot").css({"left":dotLeft,"top":dotTop});
+        $(".box").each(function(index, element){
+            $(this).css({"left":Math.sin((ahd*index))*radius+dotLeft,"top":Math.cos((ahd*index))*radius+dotTop});
+        });
+    })
+    </script>
+
+    <title>Eight Chinese Cuisines</title>
+  </head>
+
+  <body>
+    
+    <header class="indexheader">
+      <h1>Eight Chinese Cuisines</h1>
+
+    </header>
+
+     <nav>
+    <div class="topnav">
+    <a class="active" href="index.html">Menu</a>
+    <a href="chuan.html">Chuan</a>
+    <a href="hui.html">Hui</a>
+    <a href="yue.html">Yue</a>
+    <a  href="su.html">Su</a>
+    <a href="zhe.html">Zhe</a>
+    <a href="min.html">Min</a>
+    <a href="lu.html">Lu</a>
+    <a href="xiang.html">Xiang</a>
+    <a href="contact.html">Contact & Gallery</a>
+    </div>
+    </nav>
+
+
+    <div class="skip"><a href="#roll">Skip to Main Content</a></div>
+
+
+
+    <main class="generalstart" >
+      <p>Chinese cuisine is famous for the nice flavor and its variety. The cuisine not only soothes your empty stomache, but also conveys stories and tales of the local cities. </p>
+      <p>China, with such a large territory, the weather and natural conditions vary greatly from province to province, also resulting in different local habits and unique methods of cooking their local specialties. By the end of Qing Dynasty, the Chinese cuisine system finally matured and formed eight mainstream styles with signature dishes shown as follows.</p>
+      <h5>You may click on the dishes that seems the most tasty to know more about it! The gallery also gathers other dishes along with short stories.</h5>
+
+    
+    <div class="container" id="roll">
+        <div class="dot"> </div>
+       
+        <div class="box">
+           <a href="lu.html">
+          <img src="images/lu.jpg" alt="" >Sweet Sour Fish</a></div>
+        <div class="box">
+          <a href="chuan.html">
+          <img src="images/chuan.jpg" alt="" >Hotpot</a>
+        </div>
+      <div class="box">
+          <a href="yue.html">
+          <img src="images/yue.jpg" alt="" >Dimsum</a>
+        </div>
+      <div class="box">
+          <a href="su.html">
+          <img src="images/su.jfif" alt="" >Sweet Sour Ribs</a>
+      </div>
+      <div class="box">
+          <a href="min.html">
+          <img src="images/min.jfif" alt="" >Mixed Seafood Soup</a>
+      </div>
+      <div class="box">
+           <a href="zhe.html">
+          <img src="images/zhe.jpeg" alt="" >Tea Shrimp</a>
+      </div>
+      <div class="box">
+          <a href="xiang.html">
+          <img src="images/xiang.jfif" alt="" >Stir Fried Meat</a>
+      </div>
+      <div class="box">
+          <a href="hui.html">
+          <img src="images/hui.jfif" alt="" >Bamboo Sprouts</a>
+      </div>
+    </div>
+</main>
+
+
+    <footer>
+      <p>University of Michigan School of Information <br/>
+        &copy; Yumeng Shao</p>
+    </footer>
+  </body>
+</html>

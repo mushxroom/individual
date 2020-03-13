@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    $(function(){
+        
+        var dotLeft = ($(".container").width()-$(".dot").width())/2;
+        //
+        var dotTop = ($(".container").height()-$(".dot").height())/2;
+        //
+        var stard = 0;
+        //
+        var radius = 288;
+        //每一个BOX对应的角度;
+        var avd = 360/$(".box").length+stard;
+        //每一个BOX对应的弧度;
+        var ahd = avd*Math.PI/180;    
+        //设置圆的中心点的位置
+        $(".dot").css({"left":dotLeft,"top":dotTop});
+        $(".box").each(function(index, element){
+            $(this).css({"left":Math.sin((ahd*index))*radius+dotLeft,"top":Math.cos((ahd*index))*radius+dotTop});
+        });
+    })
+    </script>
+
+    <title>Eight Chinese Cuisines-Contact</title>
+  </head>
+
+  <body>
+   
+    <header class="indexheader">
+      <h1>Eight Chinese Cuisines</h1>
+
+    </header>
+
+        <nav>
+    <div class="topnav">
+    <a href="index.html">Menu</a>
+    <a href="chuan.html">Chuan</a>
+    <a href="hui.html">Hui</a>
+    <a href="yue.html">Yue</a>
+    <a href="su.html">Su</a>
+    <a href="zhe.html">Zhe</a>
+    <a href="min.html">Min</a>
+    <a  href="lu.html">Lu</a>
+    <a href="xiang.html">Xiang</a>
+    <a class="active" href="contact.html">Contact & Gallery</a>
+    </div>
+    </nav>
+
+ <div class="skip"><a href="#con">Skip to Gallery</a></div>
+<!-- contact -->
+
+<div class="contact-container">
+  <form action="action_page.php">
+
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your name..">
+
+
+    <label for="email">E-mail</label>
+    <input type="text" id="email" name="email" placeholder="Your E-mail..">
+    
+
+    <label for="subject">Subject</label>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</div>
+
+<h2 class="con" id="con"> Gallery</h2>
+<div class="para" tabindex="0">
+  
+    <div class="paraitem parallax bg1" tabindex="0" >
+        <p>The Ginkyo of Poetry and Ceremony (Lu)</p>
+        <p class="smallp">Peotry and Ceremony are valued by Confucianism, when the dish is invented, the Ginkyo is from the trees outside of a Confucianism peotry hall.</p>
+    </div>
+    <div class="paraitem parallax bg2" tabindex="0">
+        <p>Dong Po Meat (Zhe)</p>
+        <p class="smallp">The dish is invented by a great poet Su Dongpo, who used this meat to reward worker who helped with water projects in Hangzhou</p>
+    </div>
+    <div class="paraitem parallax bg3" tabindex="0">
+        <p>Song Sao Fish Soup (Zhe)</p>
+        <p class="smallp">When the Song emperor visted the West lake, he was impressed by the Fish Soup made by a woman with Song as last name. The emperor granted much gold and jewelry to Song and the dish became famous.
+    </div>
+    <div class="paraitem parallax bg4" tabindex="0">
+        <p>Shadow Beef (Chuan)</p>
+        <p class="smallp">The dish inspired by a traditional art that uses shadows and silhoutte to present dramas. The beef is so nice that it can be sliced so thin that you can see through the meat with light. </p>
+    </div>
+    <div class="paraitem parallax bg5" tabindex="0">
+        <p>Yipin Pot (Hui)</p>
+        <p class="smallp">Yipin is an official title, and when the Ming emporor visited an Yipin officer, his wife cooked this food and the emperor was fascinated by the taste, giving the dish a name of Yipin. </p>
+    </div>
+    <div class="paraitem parallax bg6" tabindex="0">
+        <p>Braised meatball(Su)</p>
+        <p class="smallp">The direct translation of the dish is "lion head". The story behind the name is that when a general hosted a banquet, his friends praised his bravery and exploit, so powerful as a lion. Thus, they decided to call the meatball dish they were eating as "Lion Head".  </p>
+    </div>
+    <div class="paraitem parallax bg7" tabindex="0">
+        <p>Ningyuan Tofu (Xiang)</p>
+        <p class="smallp">The dish is made by putting meat inside tofu. It was said that once two brothers couldn't get along with each other, and one day, one of them bought tofu while the other bought meat. Their mother made this dish to teach them collaborating as meat and tofu will produce better results than only one.  </p>
+    </div>
+    <div class="paraitem parallax bg8" tabindex="0">
+        <p>Ding Bian Hu (Min)</p>
+        <p class="smallp">The name directly translates as "paste beside the vessel". The dish was said to be invented by a housewife who didn't have enough rice while accommodating guests, so she poured rice milk around the pot in which she was cooking other courses. The rice milk solidified and was very tasty.  </p>
+    </div>
+    <div class="paraitem parallax bg9" tabindex="0">
+        <p>BBQ Pork (Yue)</p>
+        <p class="smallp">The name of BBQ Pork in Chinese means "stick cooking". The dish is made by cooking sliced tenderloin on a stick.  </p>
+    </div>
+    <div class="paraitem parallax bg10" tabindex="0">
+        <p>Sweet Lotus Root (Su)</p>
+        <p class="smallp">The dish is made by filling the holes in lotus root with sticky rice, and use syrup to sweeten. It is one of the most famous street food in the Su regions.</p>
+    </div>
+ </div>
+
+
+    <footer>
+      <p>University of Michigan School of Information <br/>
+        &copy; Yumeng Shao</p>
+    </footer>
+  </body>
+</html>
