@@ -79,16 +79,24 @@ nav .topnav{
   padding-left: 5%;
   padding-right:5%;
   padding-bottom:5px;
+  padding-top: 5px;
   display:flex;
   flex-direction:row;
   justify-content: space-between;
   background-color:#D0ECE7;
   color: black;
 }
+a{
+  text-decoration: none;
+}
 
 nav a.active {
+  display:flex;
   background-color: #F7EFC1;
   color: #535155;
+  justify-content: space-between;
+  padding-bottom:5px;
+  padding-top:5px;
 }
 
 header > a{
@@ -380,7 +388,7 @@ display: none;
 
 
   .about{
-  
+
     grid-column: 2 /span 2;
   }
   .specialty{
@@ -444,4 +452,24 @@ display: none;
     -webkit-animation: none;
     animation: none;
   }
+}
+
+
+@-webkit-keyframes thank{
+ 100% { left: 0; }
+}
+
+@keyframes thank{
+ 100% { left: 0; }
+} 
+
+h3{
+  margin-top:39px;
+}
+
+#bar{/*finished*/
+  position:absolute;
+  left: 50%;
+  -webkit-animation:thank 2s forwards;
+  animation:thank 2s forwards;
 }
