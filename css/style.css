@@ -329,6 +329,16 @@ display: none;
   .parallax {
     background-attachment: scroll;
   }
+  
+  .generalstart{
+  margin-left: 100px;
+  margin-right: 100px;
+    }
+  .grid-container{
+  grid-template-columns: 50px auto 800px auto 50px;
+  grid-template-rows: 400px 400px 100px;
+
+  }
 }
 
 @media all and (min-width: 850px){
@@ -338,7 +348,7 @@ display: none;
 }
 
   nav .topnav{
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
   .container{
   position:relative;
@@ -442,7 +452,7 @@ display: none;
 }
 
 @media (prefers-reduced-motion:reduce){
-  #logo{
+  #thank{
     -webkit-animation: none;
     animation: none;
   }
