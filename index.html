@@ -10,7 +10,12 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-    <script media="screen and (max-width: 850px)" type="text/javascript" src="css/java.js"></script>
+    <script type="text/javascript" src="css/java.js"></script>
+    $(function() {
+    if(IsMediaType('screen') > 0 && parseInt(screen.width) > 850) {
+        $.getSscript("js/menu-collapser.js");
+    }
+});
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160644523-1"></script>
