@@ -10,28 +10,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:200&display=swap" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-
-    <script type="text/javascript">
-    $(function(){
-        
-        var dotLeft = ($(".container").width()-$(".dot").width())/2;
-        //
-        var dotTop = ($(".container").height()-$(".dot").height())/2;
-        //
-        var stard = 0;
-        //
-        var radius = 288;
-        //每一个BOX对应的角度;
-        var avd = 360/$(".box").length+stard;
-        //每一个BOX对应的弧度;
-        var ahd = avd*Math.PI/180;    
-        //设置圆的中心点的位置
-        $(".dot").css({"left":dotLeft,"top":dotTop});
-        $(".box").each(function(index, element){
-            $(this).css({"left":Math.sin((ahd*index))*radius+dotLeft,"top":Math.cos((ahd*index))*radius+dotTop});
-        });
-    })
-    </script>
+    <script media="screen and (max-width: 850px)" type="text/javascript" src="css/java.js"></script>
+    
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160644523-1"></script>
 <script>
